@@ -1,0 +1,36 @@
+.BackgroundStyle {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 0;
+}
+
+.hbar {
+    padding: 1.3rem 5%;
+    width: 100%;
+    position: absolute;
+}
+
+.bigContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}

@@ -1,13 +1,8 @@
 import PropTypes from 'prop-types'
+import './Button.css'
 
 const Button = ({text, onClick}) => { 
-    return <button onClick={onClick} className='btn' style={buttonStyle}>{text}</button>
-}
-
-const buttonStyle = {
-    display: 'flex',
-    color: 'white', 
-    backgroundColor: 'black',
+    return <button onClick={onClick} className='btn'>{text}</button>
 }
 
 Button.propTypes = {

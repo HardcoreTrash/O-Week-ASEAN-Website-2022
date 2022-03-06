@@ -1,0 +1,13 @@
+.first_title {
+    color: white;
+    background-color: #3a4981;
+    display: flex;
+    justify-content: center;
+}
+
+.second_title {
+    color: #3a4981;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}

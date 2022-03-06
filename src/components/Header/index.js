@@ -13,8 +13,8 @@ const styles = {
     height: '100vh',
 };
 
-const onClick = (link) => {
     // window.open('https://www.facebook.com/events/481465216886352/');
+const onClick = (link) => {
     return function() {
         window.open(link);
     } 

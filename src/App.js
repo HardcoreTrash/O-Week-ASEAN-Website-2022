@@ -2,25 +2,32 @@ import Header from './components/Header'
 import Carousel from './components/Carousel'
 import './App.css'
 import Section from './components/Section'
+import YoutubeEmbed from "./components/YoutubeEmbed";
+import YECC_image from './components/Images/Presentation1.png'
+import UAC_header from './components/Images/UAC2021.png'
+import joinUs from './components/Images/Joinus.jpg'
 
 function App() {
   return (
     <div className="Section">
       <Header />
-      <h2 className='first_title'>What is UNSW ASEAN Society?</h2>
-      <p>ASEAN society is a UNSW based community and non-for profit organization that aims to facilitate discussions on South East Asia's region specific issues.</p>
-      {/* https://youtu.be/dtai3mVeGMM */}
 
-      <Section title='What is UNSW ASEAN Society?' content={<p>ASEAN society is a UNSW based community and non-for profit organization that aims to facilitate discussions on South East Asia's region specific issues.</p>}/>
+      <Section title='What is UNSW ASEAN Society?' 
+      content={
+      <div>
+        <p>ASEAN society is a UNSW based community and non-for profit organization that aims to facilitate discussions on South East Asia's region specific issues.</p>
+        <YoutubeEmbed embedId="dtai3mVeGMM" />
+      </div>
+      }
+      />
 
-      <h1 className='second_title'> Previous Events </h1>
-      <Carousel />
-      
-      <h1 className='first_title'> Meet Our Team </h1>
-      <h1 className='second_title'> Recruitment </h1>
-      <h1 className='first_title'> O-Week Flyers </h1>
-      <h1 className='second_title'> YECC </h1>
-      <h1 className='first_title'> UNSW ASEAN Conference 2021 </h1>
+      <Section title='Previous Events' sectionNo='2' content={<Carousel/>}/>
+
+      <Section title='Meet Our Team' content={<p>asdsda </p>}/>
+      <Section title='Recruitment' content='' sectionNo='2' backImage={joinUs} style={{ backgroundImage: `url(${joinUs})`, backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw'}}/>
+      <Section title='O-Week Flyers' content=''/>
+      <Section title='YECC' content={<img src={YECC_image}/>} sectionNo='2'/>
+      <Section title='UNSW ASEAN Conference 2021' content={<img src={UAC_header} className='UAC_css'/>}/>
 
     </div>
   );

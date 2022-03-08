@@ -1,13 +1,26 @@
 .first_title {
     color: white;
-    background-color: #3a4981;
+    /* background-color: #3a4981; */
     display: flex;
     justify-content: center;
 }
 
+.first_back {
+    background-color: #3a4981;
+}
+
+.second_back {
+    background-color: white;
+}
+
 .second_title {
     color: #3a4981;
-    background-color: white;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+}
+
+.content_centre {
     display: flex;
     justify-content: center;
 }

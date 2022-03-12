@@ -13,7 +13,7 @@ function Section({title, content, sectionNo=1, backImage}) {
     }
     else {
         return (
-            <div className='second_back' style={{ backgroundImage: `url(${backImage})`, backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw'}}>
+            <div className='second_back'>
                 {/* <div style={{ backgroundImage: `url(${backImage})`, backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw'}}/> */}
                 <h1 className='second_title'> {title} </h1>
                 <div className='content_centre'> {content} </div>

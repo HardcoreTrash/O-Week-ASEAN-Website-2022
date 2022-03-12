@@ -7,6 +7,7 @@ import YECC_image from './components/Images/Presentation1.png'
 import UAC_header from './components/Images/UAC2021.png'
 import joinUs from './components/Images/Joinus.jpg'
 import FirstSection from './components/FirstSection'
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -15,14 +16,15 @@ function App() {
 
       <FirstSection title='What is UNSW ASEAN Society?' 
       content={
-        <p>ASEAN society is a UNSW based community and non-for profit organization that aims to facilitate discussions on South East Asia's region specific issues.</p>
+        <p style={{width: '47%'}}>ASEAN society is a UNSW based community and non-for profit organization that aims to facilitate discussions on South East Asia's region specific issues.</p>
       }
       video={<YoutubeEmbed embedId="dtai3mVeGMM" />}
       />
 
       <Section title='Previous Events' sectionNo='2' content={<Carousel/>}/>
 
-      <Section title='Meet Our Team' content={<p>asdsda </p>}/>
+      <Profile title='Meet Our Team' />
+
       <Section title='Recruitment' content='' sectionNo='2' backImage={joinUs} style={{ backgroundImage: `url(${joinUs})`, backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw'}}/>
       <Section title='O-Week Flyers' content=''/>
       <Section title='YECC' content={<img src={YECC_image}/>} sectionNo='2'/>

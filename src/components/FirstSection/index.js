@@ -9,7 +9,7 @@ function index({title, content, video}) {
                 <h1 className='t1'> {title} </h1>
                 <div className='description'> {content} </div>
             </div>
-            <div>
+            <div class='video_edit'>
                 {video}
             </div>
 

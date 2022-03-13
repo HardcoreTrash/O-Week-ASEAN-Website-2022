@@ -12,7 +12,8 @@ const onClick = (link) => {
 
 function Recruitment({title}) {
     return (
-        <div className='recruit' style={{backgroundImage: `url(${join_us})` , backgroundRepeat:"no-repeat",backgroundSize:"cover", height:'100vh',width:'100vw'}}>
+        // <div className='recruit' style={{backgroundImage: `url(${join_us})` , backgroundRepeat:"no-repeat",backgroundSize:"cover", height:'100vh',width:'100vw'}}>
+        <div className='recruit' style={{backgroundImage: `url(${join_us})`}}>
             <h1 className='second_title'> {title} </h1>
             <div className='buttonStyle'>
                 <Button text='Associate Form' onClick={onClick('https://docs.google.com/forms/d/e/1FAIpQLSdxKjZ_lw-V1rKLEeoPTkA12sayWCaqIeqJyALKoyNyQElTEQ/viewform')} />

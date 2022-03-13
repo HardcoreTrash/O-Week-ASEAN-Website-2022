@@ -12,10 +12,6 @@ function index({title, content, video}) {
             <div class='video_edit'>
                 {video}
             </div>
-
-            {/* style={{ backgroundImage: `url(${backImage})`, backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw'} */}
-                {/* <div style={{ backgroundImage: `url(${backImage})`, backgroundRepeat: 'no-repeat', height: '100vh', width: '100vw'}}/> */}
-
         </div>
     )
 }

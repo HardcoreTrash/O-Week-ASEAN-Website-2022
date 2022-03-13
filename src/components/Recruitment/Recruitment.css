@@ -1,15 +1,12 @@
 .recruit {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    /* align-content: space-between; */
     gap: 500px;
 }
 
 .buttonStyle {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* margin: 0% auto; */
-    /* align-content: flex-end; */
     justify-content: space-evenly;
 }

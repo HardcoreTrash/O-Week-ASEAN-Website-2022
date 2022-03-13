@@ -2,12 +2,14 @@
     color: white;
     display: flex;
     justify-content: center;
+    font-size: 250%;
 }
 
 .description {
     color: white;
     display: flex;
     justify-content: center;
+    font-size: 120%;
 }
 
 .column {

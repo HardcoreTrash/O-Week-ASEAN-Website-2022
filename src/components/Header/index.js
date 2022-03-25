@@ -1,11 +1,10 @@
 import Button from './Button'
-import Title from './BackgroundImage/Title.jpg'
 import { GrFacebookOption, GrInstagram, GrLinkedinOption } from "react-icons/gr";
 import './Header.css';
 import Logo from './BackgroundImage/asean_logo.png';
 
 const styles = {
-    backgroundImage: `url(${Title})`,
+    backgroundImage: `url(process.env.PUBLIC_URL + '/Title.jpg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -13,7 +12,6 @@ const styles = {
     height: '100vh',
 };
 
-    // window.open('https://www.facebook.com/events/481465216886352/');
 const onClick = (link) => {
     return function() {
         window.open(link);

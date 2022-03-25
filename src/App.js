@@ -6,6 +6,7 @@ import YoutubeEmbed from "./components/YoutubeEmbed";
 import FirstSection from './components/FirstSection'
 import Profile from './components/Profile';
 import Recruitment from './components/Recruitment';
+import Flyer from './components/Flyer';
 import Footer from './components/Footer'
 
 function App() {
@@ -20,18 +21,11 @@ function App() {
       video={<YoutubeEmbed embedId="dtai3mVeGMM" />}
       />
 
-      <Section title='Previous Events' sectionNo='2' content={<Carousel/>}/>
+      <Section title='Previous Events' sectionNo='2' content={<Carousel />}/>
       <Profile title='Meet Our Team' />
       <Recruitment title='Recruitment' />
 
-      <Section title='O-Week Flyers' content={
-        // <div>
-        //   <img src={`${process.env.PUBLIC_URL}/Images/1.1.png`} />
-        //   <img src={`${process.env.PUBLIC_URL}/Images/2.1.png`} />
-        // </div>
-        <img src={`${process.env.PUBLIC_URL}/Images/1.1.png`} />
-      
-      }/>
+      <Section title='O-Week Flyers' content={ <Flyer /> }/>
 
       <Section title='YECC' content={<img src={`${process.env.PUBLIC_URL}/Images/Presentation1.png`}/>} sectionNo='2'/>
 

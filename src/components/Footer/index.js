@@ -11,6 +11,7 @@ const onClick = (link) => {
 function index() {
     return (
         <div className='footBar'>
+            <img src={`${process.env.PUBLIC_URL}/Images/Footer.png`}/>
             <p> Copyright © UNSW ASEAN Society 2022 - All rights Reserved. </p>
             <div className='footButton'>
                 <GrInstagram className='in' onClick={onClick('https://www.instagram.com/aseansoc_unsw/?hl=en')} size={30}/>

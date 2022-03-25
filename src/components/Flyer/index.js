@@ -1,21 +1,17 @@
 import React, {useState} from 'react'
-import './Carousel.css'
+import './Flyer.css'
 import { images } from './Helper'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
-
-/*
-Youtube link: https://www.youtube.com/watch?v=iyj3TZXg2gQ
-*/
 
 const Carousel = ({slides}) => {
 
   const [currImg, setCurrImg] = useState(0)
 
   return (
-    <div className='slide'>
+    <div className='carousel'>
       <div 
-        className='slideInner' 
+        className='carouselInner' 
         style={{ backgroundImage: `url(${images[currImg].img})` }}
       >
         <div 

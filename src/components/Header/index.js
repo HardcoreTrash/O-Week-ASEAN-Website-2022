@@ -1,10 +1,9 @@
 import Button from './Button'
 import { GrFacebookOption, GrInstagram, GrLinkedinOption } from "react-icons/gr";
 import './Header.css';
-import Logo from './BackgroundImage/asean_logo.png';
 
 const styles = {
-    backgroundImage: `url(process.env.PUBLIC_URL + '/Title.jpg')`,
+    backgroundImage: `url('${process.env.PUBLIC_URL}/Images/Title.jpg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -24,7 +23,7 @@ const Header = () => {
 
             <div className='hbar'>
                 <div className='bigContainer'>
-                    <img src={Logo} className='logo'></img>
+                    <img src={`${process.env.PUBLIC_URL}/asean_logo.png`} className='logo'></img>
                     <div className='container'>
                         <GrInstagram className='in' onClick={onClick('https://www.instagram.com/aseansoc_unsw/?hl=en')} size={30}/>
                         <GrFacebookOption className='fb' onClick={onClick('https://www.facebook.com/ASEANSocUNSW')} size={30}/>

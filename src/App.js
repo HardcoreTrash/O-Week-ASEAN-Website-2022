@@ -38,15 +38,7 @@ function App() {
       sectionNo='3'
       />
 
-
-      {/* <Section title='' content={
-        <div>
-          <img src={Flyer}/>
-          <p>Copyright © UNSW ASEAN Society 2022 - All rights Reserved.</p>
-        </div>
-      }/> */}
       <Footer />
-
     </div>
   );
 }

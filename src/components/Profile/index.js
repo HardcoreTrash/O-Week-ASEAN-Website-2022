@@ -15,25 +15,16 @@ function Profile({title}) {
             <h1 className='first_title'> {title} </h1>
 
             <div className='pro_1'>
-                {/* <img src={`${process.env.PUBLIC_URL}/Profile/Dani.png`} className='profile_pic'/>
-                <img src={`${process.env.PUBLIC_URL}/Profile/Arthur.png`} className='profile_pic'/>
-                <img src={`${process.env.PUBLIC_URL}/Profile/Imandi.png`} className='profile_pic'/> */}
-
-                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Dani.png`} title='Danielle' />
-                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Arthur.png`} title='Danielle' />
-                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Imandi.png`} title='Danielle' />
+                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Dani.png`} title='DANIELLE (PRESIDENT)' />
+                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Arthur.png`} title='ARTHUR (VP INTERNAL)' />
+                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Imandi.png`} title='IMADNDI (VPEXTERNAL)' />
 
             </div>
 
             <div className='pro_2'>
-                {/* <img src={`${process.env.PUBLIC_URL}/Profile/Eric.png`} className='profile_pic'/>
-                <img src={`${process.env.PUBLIC_URL}/Profile/David_S.png`} className='profile_pic'/>
-                <img src={`${process.env.PUBLIC_URL}/Profile/Lesley.png`} className='profile_pic'/> */}
-
-                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Eric.png`} title='Danielle' />
-                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/David_S.png`} title='Danielle' />
-                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Lesley.png`} title='Danielle' />
-
+                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Eric.png`} title='ERIC (SECRETARY)' />
+                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/David_S.png`} title='DAVID (TREASURER)' />
+                <ProfileBox pic={`${process.env.PUBLIC_URL}/Profile/Lesley.png`} title='LESLEY (ARC DELEGATE)' />
             </div>
 
 {/* <p>Danielle </p>

@@ -5,6 +5,9 @@
     margin: 10px;
 }
 
-/* .footButton {
-
-} */
+.footButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10%;
+}

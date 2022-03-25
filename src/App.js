@@ -3,11 +3,8 @@ import Carousel from './components/Carousel'
 import './App.css'
 import Section from './components/Section'
 import YoutubeEmbed from "./components/YoutubeEmbed";
-import YECC_image from './components/Images/Presentation1.png'
-import UAC_header from './components/Images/UAC2021.png'
 import FirstSection from './components/FirstSection'
 import Profile from './components/Profile';
-import Flyer from './components/Images/1.1.png'
 import Recruitment from './components/Recruitment';
 import Footer from './components/Footer'
 
@@ -27,13 +24,20 @@ function App() {
       <Profile title='Meet Our Team' />
       <Recruitment title='Recruitment' />
 
-      <Section title='O-Week Flyers' content={<img src={Flyer}/>}/>
+      <Section title='O-Week Flyers' content={
+        // <div>
+        //   <img src={`${process.env.PUBLIC_URL}/Images/1.1.png`} />
+        //   <img src={`${process.env.PUBLIC_URL}/Images/2.1.png`} />
+        // </div>
+        <img src={`${process.env.PUBLIC_URL}/Images/1.1.png`} />
+      
+      }/>
 
-      <Section title='YECC' content={<img src={YECC_image}/>} sectionNo='2'/>
+      <Section title='YECC' content={<img src={`${process.env.PUBLIC_URL}/Images/Presentation1.png`}/>} sectionNo='2'/>
 
       <Section title='UNSW ASEAN Conference 2021' 
       content={
-        <img src={UAC_header} className='UAC_css'/>
+        <img src={`${process.env.PUBLIC_URL}/Images/UAC2021.png`} className='UAC_css'/>
       }
       sectionNo='3'
       />
